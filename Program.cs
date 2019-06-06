@@ -14,7 +14,9 @@ namespace RazorPagesMovie
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var Host = CreateWebHostBuilder(args).Build();
+            Host.Run();
+            Host.WaitForShutdown();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
