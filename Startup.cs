@@ -54,6 +54,10 @@ namespace RazorPagesMovie
             app.UseCookiePolicy();
 
             app.UseMvc();
+            //  
+            //  commit 1
+            //
+            //
         }
     }
 }
